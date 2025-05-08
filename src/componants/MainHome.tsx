@@ -1,7 +1,17 @@
 import { useState } from 'react'
 
 function Main() {
-    const [joke, setJoke] = useState('Blague dans 3... 2... 1...');
+    // Phrase affichée par défaut dès l'ouverture de la page
+    const [joke, setJoke] = useState('Blague dans 3... 2... 1...')
+
+    //? Pas d'API mise en place donc test avec une blague écrit directement dans le code
+    // const getJoke = () => {
+        
+    //     const respApi = {
+    //         joke: 'Quel est le sport le plus silencieux ? Le para-chuuuut'
+    //     };
+    //     setJoke(respApi.joke);
+    // };
 
     const getJoke = async () => {
 
