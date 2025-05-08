@@ -20,7 +20,7 @@ function Main() {
                     un Carambar = 1 blague = 1 sourire garanti !
                 </h1>
 
-                <h2 className='text-amber-900 h2t-6 pb-10 lg:text-2xl'>Clique sur le Carambar pour récupérer ton sourire !</h2>
+                <h2 className='text-amber-900 h2t-6 px-4 pb-10 lg:text-2xl'>Clique sur le Carambar pour récupérer ton sourire !</h2>
 
                 {/* Le container où va apparaître la blague */}
                 <div className='bg-white w-[330px] h-[130px] lg:w-[650px] lg:h-[200px] md:w-[650px] md:h-[200px] flex flex-col justify-center rounded-3xl px-4 lg:px-6 shadow'>
