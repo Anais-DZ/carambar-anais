@@ -1,32 +1,34 @@
 import { useState } from 'react'
 
 function Main() {
+
     // Phrase affichée par défaut dès l'ouverture de la page
     const [joke, setJoke] = useState('Blague dans 3... 2... 1...')
 
-    //? Pas d'API mise en place donc test avec une blague écrit directement dans le code
-    // const getJoke = () => {
-        
-    //     const respApi = {
-    //         joke: 'Quel est le sport le plus silencieux ? Le para-chuuuut'
-    //     };
-    //     setJoke(respApi.joke);
-    // };
+    // Simulation d'appel d'API pour test avec une blague écrite directement dans le code
+    const getJoke = () => {
 
-    const getJoke = async () => {
-
-        try {
-            const response = await fetch('http://localhost/carambar-projet/blagues/random'); // URL de l'API
-            if (response.ok) {
-                const data = await response.json(); // Récupère la réponse JSON qui est un tableau
-                setJoke(data[0].text_joke);
-            } else {
-                setJoke('Erreur lors de la récupération de la blague'); // Erreur si la réponse est pas OK
-            }
-        } catch (error) {
-            setJoke('Impossible de récupérer une blague, snif...'); // Erreur si le fetch échoue
-        } 
+        // Simulation d'une réponse de l'API
+        const respApi = {
+            joke: 'Que se fait un Schtroumpf quand il tombe ? Un Bleu !'
+        };
+        setJoke(respApi.joke); // Met à jour l'état avec la blague simulée
     };
+
+    //! l'API fonctionne mais pas d'hébergement
+    // const getJoke = async () => {
+    //     try {
+    //         const response = await fetch('http://localhost/carambar-projet/blagues/random'); // URL de l'API
+    //         if (response.ok) {
+    //             const data = await response.json(); // Récupère la réponse JSON qui est un tableau
+    //             setJoke(data[0].text_joke);
+    //         } else {
+    //             setJoke('Erreur lors de la récupération de la blague'); // Erreur si la réponse est pas OK
+    //         }
+    //     } catch (error) {
+    //         setJoke('Impossible de récupérer une blague, snif...'); // Erreur si le fetch échoue
+    //     } 
+
 
     return (
         <>
@@ -51,5 +53,6 @@ function Main() {
             </main>
         </>
     );
-}
+};
+
 export default Main;
