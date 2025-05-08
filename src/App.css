@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+@import "tailwindcss";
+
+
+#root {
+  width: auto;
+  height: 100vh;
+  font-family: 'DynaPuff';
+}
+
+* {
+  margin: 0;
+}
+
+.bgHeader {
+  background-image: url('/header-carambar.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.bgFooter {
+  background-image: url('/background.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.bgMain {
+  background-color: #F8ED53;
+}
+
+/* Contour blanc autour des lettres */
+.textStroke {
+  text-shadow:
+    1px 1px 0px #ffffff,
+    -1px 1px 0px #ffffff,
+    -1px -1px 0px #ffffff,
+    1px -1px 0px #ffffff;
+}
+
+p {
+  font-family: 'Playpen sans';
+}
+
+:root {
+  --inset-shadow-md: inset 0px 0px 10px -4px rgba(0, 0, 0, 0.8);
+  --shadow-md : inset 0px 18px 20px -18px rgba(0, 0, 0, 0.25);
+}
+
+.shadow {
+  box-shadow: var(--inset-shadow-md);
+}
+
+.shadoxHeader {
+  box-shadow: var(--shadow-md);
+}
