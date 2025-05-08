@@ -13,7 +13,7 @@ function Main() {
 
     return (
         <>
-            <main className='bgMain w-[100vw] lg:h-auto h-[85vh] text-center flex flex-col justify-center items-center p-8 shadoxHeader'>
+            <main className='bgMain max-w-full lg:h-auto h-[85vh] text-center flex flex-col justify-center items-center p-4 shadoxHeader'>
 
                 <h1 className='text-red-600 textStroke text-2xl pb-18 lg:py-18 lg:text-4xl'>Le savais-tu ?
                     <br />
