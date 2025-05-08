@@ -1,14 +1,21 @@
 import { useState } from 'react'
 
 function Main() {
-    // Pas de blague affichée avant d'appuyer sur le bouton
-    const [joke, setJoke] = useState('Blague dans 3... 2... 1...')
-    const getJoke = () => {
-        // Pas d'API mise en place donc test avec une blague écrit directement dans le code
-        const respApi = {
-            joke: 'Quel est le sport le plus silencieux ? Le para-chuuuut'
-        };
-        setJoke(respApi.joke);
+    const [joke, setJoke] = useState('Blague dans 3... 2... 1...');
+
+    const getJoke = async () => {
+
+        try {
+            const response = await fetch('http://localhost/carambar-projet/blagues/random'); // URL de l'API
+            if (response.ok) {
+                const data = await response.json(); // Récupère la réponse JSON qui est un tableau
+                setJoke(data[0].text_joke);
+            } else {
+                setJoke('Erreur lors de la récupération de la blague'); // Erreur si la réponse est pas OK
+            }
+        } catch (error) {
+            setJoke('Impossible de récupérer une blague, snif...'); // Erreur si le fetch échoue
+        } 
     };
 
     return (
