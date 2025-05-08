@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 function Main() {
     // Pas de blague affichée avant d'appuyer sur le bouton
-    const [joke, setJoke] = useState('')
+    const [joke, setJoke] = useState('Blague dans 3... 2... 1...')
     const getJoke = () => {
         // Pas d'API mise en place donc test avec une blague écrit directement dans le code
         const respApi = {
