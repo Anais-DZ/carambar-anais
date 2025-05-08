@@ -15,7 +15,7 @@ function Main() {
         <>
             <main className='bgMain max-w-full lg:h-auto h-[85vh] text-center flex flex-col justify-center items-center p-4 shadoxHeader'>
 
-                <h1 className='text-red-600 textStroke text-2xl pb-18 lg:py-18 lg:text-4xl'>Le savais-tu ?
+                <h1 className='text-red-600 textStroke px-10 text-2xl pb-18 lg:py-18 lg:text-4xl'>Le savais-tu ?
                     <br />
                     un Carambar = 1 blague = 1 sourire garanti !
                 </h1>
