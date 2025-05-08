@@ -6,7 +6,7 @@ function Main() {
     const getJoke = () => {
         // Pas d'API mise en place donc test avec une blague écrit directement dans le code
         const respApi = {
-            joke: 'Quel est le sport le plus fruité ? La boxe, parce que tu te prends des pêches dans la poire et tu tombes dans les pommes.'
+            joke: 'Quel est le sport le plus silencieux ? Le para-chuuuut'
         };
         setJoke(respApi.joke);
     };
