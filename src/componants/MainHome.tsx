@@ -28,7 +28,7 @@ function Main() {
                 </div>
 
                 {/* Bouton en forme de Carambar */}
-                <button onClick={getJoke} className='cursor-pointer w-3/5 lg:w-1/5 md:max-w-[300px] lg:hover:scale-110 lg:transition-transform lg:duration-300 py-12'>
+                <button onClick={getJoke} className='cursor-pointer w-3/5 lg:w-1/5 md:max-w-[300px] lg:hover:scale-110 lg:transition-transform lg:duration-300 pt-6 pb-0 lg:py-10'>
                     <img src="mini-carambar.webp" alt="bouton pour afficher une blague" />
                 </button>
             </main>
